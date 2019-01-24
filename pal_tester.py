@@ -5,17 +5,16 @@ def test_suite():
             print("OK")
         else:
             print("NOK")
-
-def check_palindrome(string):
     """
         This checks if the given input string is a palindrome
         It returns True if the input string is a palindrome
         It returns False if the input string is not a palindrome
     """
+def check_palindrome(string):
+
 	if string == string[::-1]:
 		return True # to indicate that the input string is a palindrome
 	return False
-
 # Main test cases
 test_inputs = \
     {
@@ -27,4 +26,4 @@ test_inputs = \
     }
 
 
-test_suite()
+test_suite() 
